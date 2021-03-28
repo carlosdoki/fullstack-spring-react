@@ -1,0 +1,61 @@
+### List Pessoas
+GET http://localhost:8080/pessoas HTTP/1.1
+
+
+### List Pessoa
+GET http://localhost:8080/pessoas/1 HTTP/1.1
+
+
+### POST Pessoas
+POST http://localhost:8080/pessoas HTTP/1.1
+content-type: application/json
+
+{
+   "nome": "Carlos",
+    "cpf": "00000000",
+    "telefone": "0000000",
+    "email": "carlosdoki@gmail.com",
+    "idade": 45,
+    "dataNascimento": "01/12/1975"
+}
+
+### PUT Pessoas
+PUT http://localhost:8080/pessoas/2 HTTP/1.1
+content-type: application/json
+
+{
+   "nome": "Carlos 2",
+    "cpf": "00000111000",
+    "telefone": "11111111",
+    "email": "carlosdoki@gmail.com",
+    "idade": 45,
+    "dataNascimento": "01/12/1975",
+    "isVacinada" : true
+}
+
+
+### List GrupoPrioridades
+GET http://localhost:8080/grupoprioridade HTTP/1.1
+
+
+### List GrupoPrioridade
+GET http://localhost:8080/grupoprioridade/1 HTTP/1.1
+
+
+### POST GrupoPrioridade
+POST http://localhost:8080/grupoprioridade HTTP/1.1
+content-type: application/json
+
+{
+   "nome": "Prioridade 1",
+   "descricao": "Descricao prioridade 1"
+}
+
+### PUT GrupoPrioridade
+PUT http://localhost:8080/grupoprioridade/1 HTTP/1.1
+content-type: application/json
+
+{
+   "nome": "Prioridade 2",
+   "descricao": "Descricao prioridade 2"   
+}
